@@ -1,0 +1,8 @@
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+/* Применяем Manrope для всех элементов навбара */
+.navbar, .nav-menu li a, .phone-number {
+    font-family: 'Manrope', sans-serif;
+}
