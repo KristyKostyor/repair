@@ -1,0 +1,66 @@
+/* Основной блок */
+.offers {
+    padding: 110px 0;
+}
+
+/* Контейнер */
+.offers__container {
+    max-width: 670px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.offers__title {
+    color: #264D6F;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+
+.offers__subtitle {
+    color: #264D6F;
+    font-size: 24px;
+    margin-bottom: 114px;
+}
+
+
+.offers__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-content: center;
+}
+
+
+.offers__item {
+    width: 376px;
+    height: 239px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+}
+
+
+.offers__logo {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.offers__item-title {
+    color: #264D6F;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+.offers__item-text {
+    color: #264D6F;
+    font-size: 16px;
+}

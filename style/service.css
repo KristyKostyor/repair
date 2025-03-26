@@ -1,0 +1,80 @@
+.services {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.services__title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #F7931E;
+}
+
+.services__subtitle {
+    font-size: 32px;
+    font-weight: 800;
+    color: #264D6F;
+    margin-top: 0;
+    width: 530px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    }
+
+    .services__grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px; /* Расстояние между карточками */
+        justify-content: center;
+        max-width: 1200px; /* Ширина для ровных 5 карточек */
+        margin: 30px auto;
+    }
+    
+    .services__item {
+        width: 183px;
+        height: 257px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: #ffffff;
+        border-radius: 10px;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        padding: 20px 10px;
+    }
+    
+    .services__item:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+    
+    .services__item img {
+        width: 180px;
+        height: 205px;
+        object-fit: contain;
+        margin-bottom: 15px;
+    }
+    
+    .services__item p {
+        font-size: 16px;
+        color: #264D6F;
+        font-weight: 500;
+    }
+    
+    /* Адаптивность для мобильных устройств */
+    @media (max-width: 768px) {
+        .services__grid {
+            gap: 15px;
+            max-width: 400px;
+        }
+    
+        .services__item {
+            width: 150px;
+            height: 220px;
+        }
+    
+        .services__item img {
+            width: 80px;
+            height: 80px;
+        }
+    }
+    

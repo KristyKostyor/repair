@@ -1,0 +1,125 @@
+/* Основной блок */
+.team {
+    padding: 100px 0;
+    text-align: center;
+    background-color: lightgray;
+}
+
+/* Контейнер */
+.team__container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Заголовок */
+.team__title {
+    color: #F7931E;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Подзаголовок */
+.team__subtitle {
+    color: #264D6F;
+    margin-bottom: 15px;
+}
+
+.team__subtitle--primary {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.team__subtitle--secondary {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 100px;
+}
+
+/* Сетка сотрудников */
+.team__list {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+/* Карточка сотрудника */
+.team__item {
+    background-color: white;
+    border-radius: 12px;
+    width: 376px;
+    height: 561px;
+    padding: 40px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Фото сотрудника */
+.team__photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Имя */
+.team__name {
+    color: #264D6F;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+/* Должность */
+.team__position {
+    color: #264D6F;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Рейтинг */
+.team__rating {
+    color: #FFD700; /* Золотые звезды */
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Информация о сотруднике */
+.team__info {
+    color: #264D6F;
+    font-size: 16px;
+}
+
+.button {
+    margin-top: 100px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* Расстояние между текстом и стрелочкой */
+    padding: 12px 32px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.button--yellow {
+    background-color: #F7931E;
+    color: #ffffff;
+    border: 2px solid #F7931E;
+}
+
+
+.button__icon {
+    font-weight: 300; /* Тонкий шрифт для стрелочки */
+    font-size: 20px;
+}
+.button--yellow:hover {
+    background-color: #c94040;
+}

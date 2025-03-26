@@ -1,0 +1,54 @@
+/* Основной блок */
+.brands {
+    max-width: 1000px; /* Исправлено на 977px */
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* Заголовок */
+.brands__title {
+    color: #264D6F;
+    max-width: 576px;
+    font-size: 32px;
+    margin-bottom: 15px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Подзаголовок */
+.brands__subtitle {
+    color: #264D6F;
+    max-width: 576px;
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.brands__list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 колонок */
+    gap: 20px; /* Отступы между элементами */
+}
+
+.brands__item,.brands__item-wirp {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brands__item img {
+    height: 85px;
+    width: 127px;
+}
+.brands__item-wirp img{
+        height: 44px; 
+        width: 139px; 
+    
+    
+}

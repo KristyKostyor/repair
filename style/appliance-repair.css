@@ -1,0 +1,107 @@
+.appliance-repair {
+    text-align: center;
+    padding: 87px 0;
+}
+
+.appliance-repair__title {
+    font-size: 32px;
+    margin-bottom: 5px;
+    color: #264D6F;
+}
+
+.appliance-repair__subtitle {
+    font-size: 24px;
+    margin-bottom: 32px;
+    color: #F7931E;
+    margin-top: 0;
+}
+
+.appliance-repair__cards {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.appliance-repair__card {
+    width: 343px;
+    height: 537px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.appliance-repair__map {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.appliance-repair__dots {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.appliance-repair__dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #F7931E;
+    background-color: #FFF;
+}
+
+.appliance-repair__dot--active {
+    background-color: #F7931E;
+    border-color: #F7931E;
+}
+
+.appliance-repair__dot {
+    width: 12px;
+    height: 12px;
+    background-color: #FFF;
+    border-radius: 50%;
+}
+
+.appliance-repair__dot--active {
+    background-color: #F7931E;
+}
+.appliance-repair__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.appliance-repair__card {
+    position: relative;
+}
+
+.appliance-repair__call-title {
+    font-size: 32px;
+    margin-bottom: 5px;
+    color: #264D6F;
+}
+
+.appliance-repair__call-subtitle {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-weight: 300;
+    color: #264D6F;
+}
+
+.appliance-repair__button {
+    background-color: #F7931E;
+    color: #264D6F;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+}

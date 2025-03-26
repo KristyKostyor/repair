@@ -1,0 +1,17 @@
+.footer {
+    text-align: center;
+    padding: 50px 0 5px 0;
+    font-size: 14px;
+}
+
+.footer__text {
+    margin: 4px 0;
+}
+
+.footer__text--policy {
+    color: #F7931E;
+}
+
+.footer__text--copyright {
+    color: #264D6F;
+}

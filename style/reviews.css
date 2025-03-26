@@ -1,0 +1,107 @@
+/* Основной блок */
+.reviews {
+    padding: 100px 0;
+    text-align: center;
+}
+
+/* Контейнер */
+.reviews__container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.reviews__title {
+    color: #264D6F;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.reviews__subtitle {
+    color: #264D6F;
+    font-size: 24px;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+.reviews__rating {
+    max-width: 250px;
+    margin: 0 auto 60px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #264D6F;
+}
+
+/* Основной текст */
+.reviews__rating-text {
+    color: #264D6F;
+}
+
+/* Желтая оценка */
+.reviews__rating-value {
+    color: #F7931E;
+    font-size: 46px;
+    font-weight: 700;
+    display: block; /* Размещаем отдельно по центру */
+    margin: 5px 0;
+}
+
+.reviews__rating-reviews {
+    color: #264D6F;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+
+/* Сетка отзывов */
+.reviews__list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Карточка отзыва */
+.reviews__item {
+    width: 376px;
+    padding: 20px;
+    border: 2px solid #264D6F;
+    border-radius: 12px;
+    text-align: left;
+}
+
+/* Заголовок отзыва */
+.reviews__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Имя клиента */
+.reviews__name {
+    color: #264D6F;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/* Локация */
+.reviews__location {
+    color: #264D6F;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Разделительная черта */
+.reviews__divider {
+    border: 0;
+    height: 1px;
+    background-color: #264D6F;
+    margin: 10px 0;
+}
+
+/* Текст отзыва */
+.reviews__text {
+    color: #264D6F;
+    font-size: 16px;
+    line-height: 1.5;
+}

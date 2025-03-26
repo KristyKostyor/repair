@@ -1,14 +1,14 @@
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Разделяем элементы */
+    justify-content: space-between; 
     padding: 10px 20px;
-    background-color: #fff; /* Цвет фона */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень */
+    background-color: #fff; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 .nav-menu li a {
     font-family: 'Manrope', sans-serif;
-    font-weight: 400; /* Regular */
+    font-weight: 400; 
     font-size: 16px;
 }
 
@@ -17,7 +17,8 @@
 }
 
 .logo {
-    height: 50px; /* Регулируй размер лого */
+    height: 50px; 
+    padding-left: 150px;
 }
 
 .nav-menu {
@@ -31,7 +32,7 @@
 .nav-menu li a {
     text-decoration: none;
     color: #264D6F;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 .nav-right {
@@ -43,7 +44,7 @@
 }
 
 .nav-right img {
-    height: 15px; /* Фиксируем размер иконки */
+    height: 15px;
     width: auto;  
     margin-right: 5px;
     padding-top: 15px;
@@ -51,10 +52,10 @@
 
 .phone-number {
     font-weight: bold;
-    color: #fff; /* Исправлен цвет текста */
+    color: #fff; 
     background-color: #F7931E;
-    padding: 5px 10px; /* Добавлены отступы */
-    border-radius: 5px; /* Скругление углов */
+    padding: 5px 10px;
+    border-radius: 5px; 
 }
 .phone-logo{
     height: 5px;
@@ -62,12 +63,12 @@
 }
 
 .burger-menu {
-    display: none; /* Показывать только на мобильных */
-    font-size: 24px;
+    display: none; 
+    font-size: 28px;
     cursor: pointer;
 }
 
-/* Медиа-запрос для мобильных */
+
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;

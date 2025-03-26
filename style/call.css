@@ -1,0 +1,47 @@
+.urgent-repairs {
+    background-color: #F7931E;
+    width: 100%;
+    height: 470px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+
+.urgent-repairs__content {
+    max-width: 400px; 
+}
+
+.urgent-repairs__title {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.urgent-repairs__subtitle {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+.urgent-repairs__button {
+    display: inline-block;
+    border: 2px solid #fff;
+    color: #fff;
+    background: transparent;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s, color 0.3s;
+}
+
+.urgent-repairs__button:hover {
+    background: #fff;
+    color: #F7931E;
+}
