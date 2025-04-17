@@ -1,6 +1,7 @@
 /* Основной блок */
 .brands {
-    max-width: 1000px; /* Исправлено на 977px */
+    max-width: 1000px;
+    /* Исправлено на 977px */
     margin: 0 auto;
     text-align: center;
     padding: 50px 0;
@@ -29,26 +30,70 @@
     margin-right: auto;
 }
 
+/* Контейнер для брендов */
 .brands__list {
     display: grid;
-    grid-template-columns: repeat(6, 1fr); /* 6 колонок */
-    gap: 20px; /* Отступы между элементами */
+    grid-template-columns: repeat(6, 1fr);
+    /* 6 колонок */
+    gap: 20px;
+    /* Отступы между элементами */
 }
 
-.brands__item,.brands__item-wirp {
+/* Каждый элемент в списке брендов */
+.brands__item,
+.brands__item-wirp {
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* Изображения брендов */
 .brands__item img {
     height: 85px;
     width: 127px;
 }
-.brands__item-wirp img{
-        height: 44px; 
-        width: 139px; 
-    
-    
+
+.brands__item-wirp img {
+    height: 44px;
+    width: 139px;
+}
+
+/* Адаптация для экранов с шириной 1024px и меньше */
+@media (max-width: 1024px) {
+    .brands__list {
+        grid-template-columns: repeat(4, 1fr);
+        /* 4 колонки */
+    }
+
+    .brands__item img,
+    .brands__item-wirp img {
+        height: 70px;
+        width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .brands__list {
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 колонки */
+    }
+
+    .brands__item img,
+    .brands__item-wirp img {
+        height: 70px;
+        width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .brands__list {
+        grid-template-columns: 1fr;
+    }
+
+    .brands__item img,
+    .brands__item-wirp img {
+        height: 70px;
+        width: auto;
+    }
 }

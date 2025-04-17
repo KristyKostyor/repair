@@ -52,12 +52,12 @@
     margin-top: 5px;
 }
 
-
 /* Сетка отзывов */
 .reviews__list {
     display: flex;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap; /* Добавляем обтекание для мобильных устройств */
 }
 
 /* Карточка отзыва */
@@ -104,4 +104,85 @@
     color: #264D6F;
     font-size: 16px;
     line-height: 1.5;
+}
+
+/* Адаптация для экранов с шириной 1024px и меньше */
+@media (max-width: 1024px) {
+    .reviews__list {
+        gap: 20px; /* Уменьшаем отступы */
+    }
+
+    .reviews__item {
+        width: 300px; /* Уменьшаем ширину карточки */
+    }
+
+    .reviews__title {
+        font-size: 28px; /* Уменьшаем размер шрифта */
+    }
+
+    .reviews__subtitle {
+        font-size: 22px; /* Уменьшаем размер шрифта */
+    }
+
+    .reviews__rating-value {
+        font-size: 40px; /* Уменьшаем размер шрифта */
+    }
+
+    .reviews__rating-reviews {
+        font-size: 18px; /* Уменьшаем размер шрифта */
+    }
+}
+
+/* Адаптация для экранов с шириной 768px и меньше */
+@media (max-width: 768px) {
+    .reviews__list {
+        gap: 15px; /* Уменьшаем отступы */
+    }
+
+    .reviews__item {
+        width: 250px; /* Уменьшаем ширину карточки */
+    }
+
+    .reviews__title {
+        font-size: 24px; /* Уменьшаем размер шрифта */
+    }
+
+    .reviews__subtitle {
+        font-size: 20px; /* Уменьшаем размер шрифта */
+    }
+
+    .reviews__rating-value {
+        font-size: 36px; /* Уменьшаем размер шрифта */
+    }
+
+    .reviews__rating-reviews {
+        font-size: 16px; /* Уменьшаем размер шрифта */
+    }
+}
+
+/* Адаптация для экранов с шириной 480px и меньше */
+@media (max-width: 480px) {
+    .reviews__list {
+        gap: 10px; /* Уменьшаем отступы */
+    }
+
+    .reviews__item {
+        width: 90%; /* Уменьшаем ширину карточки, но не на всю ширину */
+    }
+
+    .reviews__title {
+        font-size: 20px; /* Уменьшаем размер шрифта */
+    }
+
+    .reviews__subtitle {
+        font-size: 18px; /* Уменьшаем размер шрифта */
+    }
+
+    .reviews__rating-value {
+        font-size: 32px; /* Уменьшаем размер шрифта */
+    }
+
+    .reviews__rating-reviews {
+        font-size: 14px; /* Уменьшаем размер шрифта */
+    }
 }

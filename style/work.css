@@ -12,8 +12,8 @@
     justify-content: center;
     gap: 30px;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
-
 
 .work__card {
     width: 376px;
@@ -27,24 +27,22 @@
     justify-content: flex-start;
     padding: 20px;
     position: relative;
-    transition: transform 0.3s ease, background-color 0.3s ease; /* Плавная анимация */
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .work__card:hover {
-    transform: scale(1.05); /* Лёгкое увеличение */
-    background-color: #f0f8ff; /* Слегка меняем фон при наведении */
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15); /* Чуть более выразительная тень */
+    transform: scale(1.05);
+    background-color: #f0f8ff;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-.work__icon, .work__icon-dia {
-    width: 40px; /* Размер логотипа */
+.work__icon,
+.work__icon-dia {
+    width: 40px;
     height: 40px;
     margin-bottom: 50px;
     margin-left: 16px;
 }
-
-
-
 
 .work__title {
     color: #264D6F;
@@ -59,4 +57,42 @@
     margin-left: 16px;
     font-weight: lighter;
     text-align: left;
+}
+@media (max-width: 768px) {
+    .work {
+        font-size: 28px;
+        padding: 40px 16px;
+    }
+
+    .work__container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .work__card {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        padding: 20px 16px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .work__icon,
+    .work__icon-dia {
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+
+    .work__title {
+        margin: 12px 0;
+        font-size: 20px;
+    }
+
+    .work__text {
+        margin: 0;
+        font-size: 14px;
+        text-align: center;
+    }
 }

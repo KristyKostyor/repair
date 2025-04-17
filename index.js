@@ -7,3 +7,16 @@ document.querySelectorAll('.appliance-repair__overlay').forEach(overlay => {
         dots[index].classList.add('appliance-repair__dot--active');
     });
 });
+
+
+
+const burger = document.querySelector('.navbar__burger');
+const menu = document.querySelector('.navbar__menu');
+
+burger.addEventListener('click', function () {
+  menu.classList.toggle('navbar__menu--active');
+  
+  const expanded = burger.getAttribute('aria-expanded') === 'true';
+  burger.setAttribute('aria-expanded', !expanded);
+});
+

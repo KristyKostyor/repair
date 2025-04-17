@@ -10,13 +10,11 @@
     text-align: center;
 }
 
-
 .offers__title {
     color: #264D6F;
     font-size: 32px;
     margin-bottom: 20px;
 }
-
 
 .offers__subtitle {
     color: #264D6F;
@@ -24,14 +22,13 @@
     margin-bottom: 114px;
 }
 
-
 .offers__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    /* 3 колонки */
     gap: 30px;
     justify-content: center;
 }
-
 
 .offers__item {
     width: 376px;
@@ -46,7 +43,6 @@
     padding: 20px;
 }
 
-
 .offers__logo {
     width: 60px;
     height: 60px;
@@ -59,8 +55,99 @@
     margin-bottom: 10px;
 }
 
-
 .offers__item-text {
     color: #264D6F;
     font-size: 16px;
+}
+
+/* Адаптация для экранов с шириной 1024px и меньше */
+@media (max-width: 1024px) {
+    .offers__list {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 колонки */
+        gap: 20px;
+    }
+
+    .offers__item {
+        width: 300px;
+        /* Уменьшаем ширину карточек */
+        height: 220px;
+        /* Уменьшаем высоту карточек */
+    }
+
+    .offers__item-title {
+        font-size: 18px;
+        /* Уменьшаем размер заголовка */
+    }
+
+    .offers__item-text {
+        font-size: 14px;
+        /* Уменьшаем размер текста */
+    }
+}
+
+/* Адаптация для экранов с шириной 768px и меньше */
+@media (max-width: 768px) {
+    .offers__list {
+        grid-template-columns: 1fr;
+        /* 1 колонка */
+        gap: 20px;
+    }
+
+    .offers__item {
+        width: 100%;
+        /* Карточки занимают всю ширину */
+        height: auto;
+        /* Высота карточек будет автоматически подстраиваться */
+        padding: 10px;
+        /* Уменьшаем отступы внутри карточек */
+    }
+
+    .offers__logo {
+        width: 50px;
+        /* Уменьшаем логотип */
+        height: 50px;
+    }
+
+    .offers__item-title {
+        font-size: 16px;
+        /* Уменьшаем размер заголовка */
+    }
+
+    .offers__item-text {
+        font-size: 14px;
+        /* Уменьшаем размер текста */
+    }
+}
+
+/* Адаптация для экранов с шириной 480px и меньше */
+@media (max-width: 480px) {
+    .offers__list {
+        grid-template-columns: 1fr;
+        /* 1 колонка */
+        gap: 15px;
+    }
+
+    .offers__item {
+        width: 90%;
+        /* Карточки занимают 90% ширины */
+        height: auto;
+        /* Высота карточек будет автоматически подстраиваться */
+    }
+
+    .offers__logo {
+        width: 40px;
+        /* Еще меньше логотип */
+        height: 40px;
+    }
+
+    .offers__item-title {
+        font-size: 14px;
+        /* Уменьшаем размер заголовка */
+    }
+
+    .offers__item-text {
+        font-size: 12px;
+        /* Уменьшаем размер текста */
+    }
 }

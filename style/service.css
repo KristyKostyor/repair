@@ -1,3 +1,4 @@
+/* Основной блок */
 .services {
     text-align: center;
     padding: 50px 20px;
@@ -15,66 +16,136 @@
     font-weight: 800;
     color: #264D6F;
     margin-top: 0;
-    width: 530px; 
-    margin-left: auto; 
-    margin-right: auto; 
+    width: 530px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Сетка для карточек */
+.services__grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    /* Расстояние между карточками */
+    justify-content: center;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.services__item {
+    width: 183px;
+    height: 257px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    padding: 20px 10px;
+}
+
+.services__item:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.services__item img {
+    width: 180px;
+    height: 205px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.services__item p {
+    font-size: 16px;
+    color: #264D6F;
+    font-weight: 500;
+}
+
+/* Адаптивность для 1024px и ниже — 4 карточки в ряд */
+@media (max-width: 1024px) {
+    .services__grid {
+        max-width: 900px;
+        gap: 25px;
     }
 
-    .services__grid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px; /* Расстояние между карточками */
-        justify-content: center;
-        max-width: 1200px; /* Ширина для ровных 5 карточек */
-        margin: 30px auto;
-    }
-    
     .services__item {
-        width: 183px;
-        height: 257px;
-        display: flex;
+        width: 170px;
+        height: 240px;
+    }
+
+    .services__item img {
+        width: 150px;
+        height: 180px;
+    }
+}
+
+/* Адаптивность для 900px и ниже — 3 карточки в ряд */
+@media (max-width: 900px) {
+    .services__grid {
+        max-width: 700px;
+    }
+
+    .services__item {
+        width: 160px;
+        height: 230px;
+    }
+
+    .services__item img {
+        width: 140px;
+        height: 170px;
+    }
+}
+
+/* Адаптивность для 768px и ниже — 2 карточки в ряд */
+@media (max-width: 768px) {
+    .services__grid {
+        gap: 15px;
+        max-width: 400px;
+    }
+
+    .services__item {
+        width: 150px;
+        height: 220px;
+    }
+
+    .services__item img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .services__grid {
         flex-direction: column;
         align-items: center;
-        text-align: center;
-        background-color: #ffffff;
-        border-radius: 10px;
-        transition: transform 0.3s ease, background-color 0.3s ease;
-        padding: 20px 10px;
     }
-    
+
+    .services__item {
+        width: 90%;
+        height: auto;
+    }
+
+    .services__item img {
+        width: 100px;
+        height: auto;
+    }
+    .services__subtitle {
+        font-size: 22px;
+        font-weight: 800;
+        color: #264D6F;
+        margin-top: 0;
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 769px) {
     .services__item:hover {
-        transform: scale(1.2);
+        transform: scale(1.05);
         cursor: pointer;
     }
-    
-    .services__item img {
-        width: 180px;
-        height: 205px;
-        object-fit: contain;
-        margin-bottom: 15px;
-    }
-    
-    .services__item p {
-        font-size: 16px;
-        color: #264D6F;
-        font-weight: 500;
-    }
-    
-    /* Адаптивность для мобильных устройств */
-    @media (max-width: 768px) {
-        .services__grid {
-            gap: 15px;
-            max-width: 400px;
-        }
-    
-        .services__item {
-            width: 150px;
-            height: 220px;
-        }
-    
-        .services__item img {
-            width: 80px;
-            height: 80px;
-        }
-    }
-    
+}

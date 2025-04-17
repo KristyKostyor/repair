@@ -9,21 +9,29 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="nav-left">
-            <img src="./img/FullLogo_NoBuffer.png" alt="logo" class="logo">
+        <div class="navbar__left">
+            <img src="./img/FullLogo_NoBuffer.png" alt="logo" class="navbar__logo">
         </div>
-        <ul class="nav-menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#our-service">Service</a></li>
-            <li><a href="#">Location</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Contact us</a></li>
+
+        <button class="navbar__burger" aria-label="Toggle menu" aria-expanded="false">
+            &#9776;
+        </button>
+
+        <ul class="navbar__menu">
+            <li class="navbar__item"><a href="#" class="navbar__link">Home</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__link">About us</a></li>
+            <li class="navbar__item"><a href="#our-service" class="navbar__link">Service</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__link">Location</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__link">FAQ</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__link">Contact us</a></li>
         </ul>
-        <div class="nav-right">
-            <p class="phone-number"><img class="phone-logo" src="./img/phone-call-white 1.png" alt="phone">(949) 740-5071</p>
+
+        <div class="navbar__right">
+            <p class="navbar__phone">
+                <img src="./img/phone-call-white 1.png" alt="phone" class="navbar__phone-icon">
+                (949) 740-5071
+            </p>
         </div>
-        <div class="burger-menu">&#9776;</div>
     </nav>
     <section id="hero" class="hero">
         <div class="hero__content">
@@ -180,93 +188,90 @@
         <a href="tel:+1234567890" class="urgent-repairs__button">Call Us Now</a>
         </div>
         </section>
-
         <section class="offers">
-        <div class="offers__container">
-          <h2 class="offers__title">Amazing offers to make your repairs more affordable!</h2>
-          <p class="offers__subtitle">
-            Explore our promotions to discover the latest deals and offers
-          </p>
-      
-          <div class="offers__list">
-            <div class="offers__item">
-              <img src="./img/offers/offers_icon.png" alt="Brand 1" class="offers__logo">
-              <h3 class="offers__item-title">One simple price, no surprises</h3>
-              <p class="offers__item-text">A flat $75 service call fee applies when no repair is feasible.</p>
+            <div class="offers__container">
+                <h2 class="offers__title">Amazing offers to make your repairs more affordable!</h2>
+                <p class="offers__subtitle">
+                    Explore our promotions to discover the latest deals and offers
+                </p>
+        
+                <div class="offers__list">
+                    <div class="offers__item">
+                        <img src="./img/offers/offers_icon.png" alt="Brand 1" class="offers__logo">
+                        <h3 class="offers__item-title">One simple price, no surprises</h3>
+                        <p class="offers__item-text">A flat $75 service call fee applies when no repair is feasible.</p>
+                    </div>
+        
+                    <div class="offers__item">
+                        <img src="./img/offers/offers_icon (1).png" alt="Brand 2" class="offers__logo">
+                        <h3 class="offers__item-title">Fee Waiver</h3>
+                        <p class="offers__item-text">When you move forward with a repair, the service call fee disappears</p>
+                    </div>
+        
+                    <div class="offers__item">
+                        <img src="./img/offers/offers_icon (2).png" alt="Brand 3" class="offers__logo">
+                        <h3 class="offers__item-title">20% Discount</h3>
+                        <p class="offers__item-text">Special offer: 20% discount for all new and referred customers</p>
+                    </div>
+        
+                    <div class="offers__item">
+                        <img src="./img/offers/offers_icon (3).png" alt="Brand 4" class="offers__logo">
+                        <h3 class="offers__item-title">$25 Referral Payback</h3>
+                        <p class="offers__item-text">Get $25 for every friend you refer who orders our service</p>
+                    </div>
+        
+                    <div class="offers__item">
+                        <img src="./img/offers/offers_icon (4).png" alt="Brand 5" class="offers__logo">
+                        <h3 class="offers__item-title">Prime Members Club</h3>
+                        <p class="offers__item-text">Get exclusive membership benefits for only $199 annually.</p>
+                    </div>
+        
+                    <div class="offers__item">
+                        <img src="./img/offers/offers_icon (5).png" alt="Brand 6" class="offers__logo">
+                        <h3 class="offers__item-title">Prime Members Club</h3>
+                        <p class="offers__item-text">Get exclusive membership benefits for only $199 annually</p>
+                    </div>
+                </div>
             </div>
-      
-            <div class="offers__item">
-              <img src="./img/offers/offers_icon (1).png" alt="Brand 2" class="offers__logo">
-              <h3 class="offers__item-title">Fee Waiver</h3>
-              <p class="offers__item-text">When you move forward with a repair, the service call fee disappears</p>
+        </section>
+        <section class="team">
+            <div class="team__container">
+                <h2 class="team__title">Dedicated Professionals</h2>
+                <h3 class="team__subtitle team__subtitle--primary">The team you can count on for exceptional service</h3>
+                <h3 class="team__subtitle team__subtitle--secondary">Meet our skilled and dedicated team of professionals</h3>
+     
+                <div class="team__list">
+                    <div class="team__item">
+                        <img src="./img/our_team_img.png" alt="John Doe" class="team__photo">
+                        <h4 class="team__name">Andrei D.</h4>
+                        <p class="team__position">Service Expert</p>
+                        <div class="team__rating">⭐⭐⭐⭐⭐</div>
+                        <p class="team__info">Completed projects: 2790+</p>
+                        <p class="team__info">Experience: 3 years</p>
+                        <p class="team__info">Background Cheked Insured</p>
+                    </div>
+                    <div class="team__item">
+                        <img src="./img/our_team_img (1).png" alt="Jane Smith" class="team__photo">
+                        <h4 class="team__name">Stan M.</h4>
+                        <p class="team__position">Service Expert</p>
+                        <div class="team__rating">⭐⭐⭐⭐⭐</div>
+                        <p class="team__info">Completed projects: 1209+</p>
+                        <p class="team__info">Experience: 2 years</p>
+                        <p class="team__info">Background Cheked Insured</p>
+                    </div>
+                    <div class="team__item">
+                        <img src="./img/our_team_img (2).png" alt="Michael Johnson" class="team__photo">
+                        <h4 class="team__name">Dany D.</h4>
+                        <p class="team__position">Service Expert</p>
+                        <div class="team__rating">⭐⭐⭐⭐⭐</div>
+                        <p class="team__info">Completed projects: 4387+</p>
+                        <p class="team__info">Experience: 4 years</p>
+                        <p class="team__info">Background Cheked Insured</p>
+                    </div>
+                </div>
+                <a href="#" class="button button--yellow">BOOK A SERVICE<span class="button__icon">→</span></a>
             </div>
-      
-            <div class="offers__item">
-              <img src="./img/offers/offers_icon (2).png" alt="Brand 3" class="offers__logo">
-              <h3 class="offers__item-title">20% Discount</h3>
-              <p class="offers__item-text">Special offer: 20% discount for all new and referred customers</p>
-            </div>
-      
-            <div class="offers__item">
-              <img src="./img/offers/offers_icon (3).png" alt="Brand 4" class="offers__logo">
-              <h3 class="offers__item-title">$25 Referral Payback</h3>
-              <p class="offers__item-text">Get $25 for every friend you refer who orders our service</p>
-            </div>
-      
-            <div class="offers__item">
-              <img src="./img/offers/offers_icon (4).png" alt="Brand 5" class="offers__logo">
-              <h3 class="offers__item-title">Prime Members Club</h3>
-              <p class="offers__item-text">Get exclusive membership benefits for only $199 annually.</p>
-            </div>
-      
-            <div class="offers__item">
-              <img src="./img/offers/offers_icon (5).png" alt="Brand 6" class="offers__logo">
-              <h3 class="offers__item-title">Prime Members Club</h3>
-              <p class="offers__item-text">Get exclusive membership benefits for only $199 annually</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="team">
-        <div class="team__container">
-          <h2 class="team__title">Dedicated Professionals</h2>
-          <h3 class="team__subtitle team__subtitle--primary">The team you can count on for exceptional service</h3>
-          <h3 class="team__subtitle team__subtitle--secondary">Meet our skilled and dedicated team of professionals</h3>
-      
-          <div class="team__list">
-            <div class="team__item">
-              <img src="./img/our_team_img.png" alt="John Doe" class="team__photo">
-              <h4 class="team__name">Andrei D.</h4>
-              <p class="team__position">Service Expert</p>
-              <div class="team__rating">⭐⭐⭐⭐⭐</div>
-              <p class="team__info">Completed projects: 2790+</p>
-              <p class="team__info">Experience: 3 years</p>
-              <p class="team__info">Background Cheked Insured</p>
-            </div>
-      
-            <div class="team__item">
-              <img src="./img/our_team_img (1).png" alt="Jane Smith" class="team__photo">
-              <h4 class="team__name">Stan M.</h4>
-              <p class="team__position">Service Expert</p>
-              <div class="team__rating">⭐⭐⭐⭐⭐</div>
-              <p class="team__info">Completed projects: 1209+</p>
-              <p class="team__info">Experience: 2 years</p>
-              <p class="team__info">Background Cheked Insured</p>
-            </div>
-      
-            <div class="team__item">
-            <img src="./img/our_team_img (2).png" alt="Michael Johnson" class="team__photo">
-            <h4 class="team__name">Dany D.</h4>
-            <p class="team__position">Service Expert</p>
-            <div class="team__rating">⭐⭐⭐⭐⭐</div>
-            <p class="team__info">Completed projects: 4387+</p>
-            <p class="team__info">Experience: 4 years</p>
-            <p class="team__info">Background Cheked Insured</p>
-            </div>
-        </div>
-        <a href="#" class="button button--yellow">BOOK A SERVICE<span class="button__icon">→</span></a>
-        </div>
-    </section>
+        </section>
     <section class="reviews">
         <div class="reviews__container">
             <h2 class="reviews__title">Genuine feedback from those we’ve helped</h2>

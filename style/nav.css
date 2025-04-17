@@ -1,91 +1,98 @@
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
     padding: 10px 20px;
-    background-color: #fff; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-}
-.nav-menu li a {
-    font-family: 'Manrope', sans-serif;
-    font-weight: 400; 
-    font-size: 16px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
 }
 
-.nav-left {
+.navbar__left,
+.navbar__right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__left {
     flex: 1;
 }
 
-.logo {
-    height: 50px; 
-    padding-left: 150px;
+.navbar__logo {
+    height: 50px;
+    padding-left: 20px;
 }
 
-.nav-menu {
+.navbar__menu {
     display: flex;
     list-style: none;
     gap: 20px;
     padding: 0;
     margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 2;
 }
 
-.nav-menu li a {
+.navbar__link {
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
     text-decoration: none;
     color: #264D6F;
-    font-weight: 400;
 }
 
-.nav-right {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 10px;
-}
-
-.nav-right img {
-    height: 15px;
-    width: auto;  
-    margin-right: 5px;
-    padding-top: 15px;
-}
-
-.phone-number {
+.navbar__phone {
     font-weight: bold;
-    color: #fff; 
+    color: #fff;
     background-color: #F7931E;
     padding: 5px 10px;
-    border-radius: 5px; 
-}
-.phone-logo{
-    height: 5px;
-    width: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
 }
 
-.burger-menu {
-    display: none; 
+.navbar__phone-icon {
+    height: 15px;
+    margin-right: 5px;
+}
+
+.navbar__burger {
+    display: none;
     font-size: 28px;
     cursor: pointer;
+    background: none;
+    border: none;
+    color: #264D6F;
 }
-
 
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        align-items: flex-start;
     }
 
-    .nav-menu {
+    .navbar__menu {
         display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff;
+        padding: 10px 0;
     }
 
-    .burger-menu {
+    .navbar__menu--active {
+        display: flex;
+    }
+
+    .navbar__burger {
         display: block;
+        align-self: flex-end;
+        margin-bottom: 10px;
     }
 
-    .nav-right {
+    .navbar__right {
         justify-content: center;
         width: 100%;
+        margin-top: 10px;
     }
 }

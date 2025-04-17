@@ -41,13 +41,14 @@
     display: flex;
     justify-content: center;
     gap: 60px;
+    flex-wrap: wrap; /* Добавлено для адаптивности */
 }
 
 /* Карточка сотрудника */
 .team__item {
     background-color: white;
     border-radius: 12px;
-    width: 376px;
+    width: 376px; /* Фиксированная ширина */
     height: 561px;
     padding: 40px 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -94,6 +95,7 @@
     font-size: 16px;
 }
 
+/* Кнопка */
 .button {
     margin-top: 100px;
     display: inline-flex;
@@ -115,11 +117,94 @@
     border: 2px solid #F7931E;
 }
 
-
 .button__icon {
     font-weight: 300; /* Тонкий шрифт для стрелочки */
     font-size: 20px;
 }
 .button--yellow:hover {
     background-color: #c94040;
+}
+
+/* Адаптация для экранов с шириной 1024px и меньше */
+@media (max-width: 1024px) {
+    .team__list {
+        gap: 30px; /* Уменьшаем отступы */
+    }
+
+    .team__item {
+        width: 300px; /* Уменьшаем ширину карточки */
+        height: auto; /* Подстраиваем высоту */
+    }
+
+    .team__name {
+        font-size: 18px; /* Уменьшаем размер шрифта */
+    }
+
+    .team__position {
+        font-size: 16px; /* Уменьшаем размер шрифта */
+    }
+
+    .team__rating {
+        font-size: 18px; /* Уменьшаем размер шрифта */
+    }
+
+    .team__info {
+        font-size: 14px; /* Уменьшаем размер шрифта */
+    }
+}
+
+/* Адаптация для экранов с шириной 768px и меньше */
+@media (max-width: 768px) {
+    .team__list {
+        gap: 20px; /* Уменьшаем отступы */
+    }
+
+    .team__item {
+        width: 250px; /* Уменьшаем ширину карточки */
+        height: auto; /* Подстраиваем высоту */
+    }
+
+    .team__name {
+        font-size: 16px; /* Уменьшаем размер шрифта */
+    }
+
+    .team__position {
+        font-size: 14px; /* Уменьшаем размер шрифта */
+    }
+
+    .team__rating {
+        font-size: 16px; /* Уменьшаем размер шрифта */
+    }
+
+    .team__info {
+        font-size: 12px; /* Уменьшаем размер шрифта */
+    }
+}
+
+/* Адаптация для экранов с шириной 480px и меньше */
+@media (max-width: 480px) {
+    .team__list {
+        gap: 15px; /* Уменьшаем отступы */
+    }
+
+    .team__item {
+        width: 90%; /* Уменьшаем ширину карточки, но не на всю ширину */
+        height: auto; /* Подстраиваем высоту */
+    }
+
+    .team__name {
+        font-size: 14px; /* Уменьшаем размер шрифта */
+    }
+
+    .team__position {
+        font-size: 12px; /* Уменьшаем размер шрифта */
+    }
+
+    .team__rating {
+        font-size: 14px; /* Уменьшаем размер шрифта */
+    }
+
+    .team__info {
+        font-size: 10px; /* Уменьшаем размер шрифта */
+    }
 }

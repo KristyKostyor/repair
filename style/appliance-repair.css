@@ -21,6 +21,7 @@
     gap: 16px;
     justify-content: center;
     margin-bottom: 16px;
+    flex-wrap: wrap; /* Добавляем для переноса на мобильных */
 }
 
 .appliance-repair__card {
@@ -32,14 +33,17 @@
     justify-content: center;
     border-radius: 8px;
     overflow: hidden;
+    position: relative;
 }
 
+/* Карта */
 .appliance-repair__map {
     width: 100%;
     height: 100%;
     border: 0;
 }
 
+/* Точки для индикатора */
 .appliance-repair__dots {
     display: flex;
     gap: 8px;
@@ -60,16 +64,7 @@
     border-color: #F7931E;
 }
 
-.appliance-repair__dot {
-    width: 12px;
-    height: 12px;
-    background-color: #FFF;
-    border-radius: 50%;
-}
-
-.appliance-repair__dot--active {
-    background-color: #F7931E;
-}
+/* Оверлей */
 .appliance-repair__overlay {
     position: absolute;
     top: 0;
@@ -78,10 +73,8 @@
     height: 100%;
     cursor: pointer;
 }
-.appliance-repair__card {
-    position: relative;
-}
 
+/* Заголовки для кнопки и карточек */
 .appliance-repair__call-title {
     font-size: 32px;
     margin-bottom: 5px;
@@ -96,6 +89,7 @@
     color: #264D6F;
 }
 
+/* Кнопка */
 .appliance-repair__button {
     background-color: #F7931E;
     color: #264D6F;
@@ -104,4 +98,104 @@
     border-radius: 4px;
     cursor: pointer;
     font-size: 20px;
+}
+
+/* Адаптация для экранов до 1024px */
+@media (max-width: 1024px) {
+    .appliance-repair__title {
+        font-size: 28px; /* Уменьшаем размер заголовка */
+    }
+
+    .appliance-repair__subtitle {
+        font-size: 20px; /* Уменьшаем размер подзаголовка */
+    }
+
+    .appliance-repair__cards {
+        gap: 12px; /* Уменьшаем отступы между карточками */
+    }
+
+    .appliance-repair__card {
+        width: 280px; /* Уменьшаем размер карточек */
+        height: auto; /* Убираем фиксированную высоту */
+    }
+
+    .appliance-repair__call-title {
+        font-size: 28px; /* Уменьшаем размер заголовка */
+    }
+
+    .appliance-repair__call-subtitle {
+        font-size: 20px; /* Уменьшаем размер подзаголовка */
+    }
+
+    .appliance-repair__button {
+        font-size: 18px; /* Уменьшаем размер шрифта на кнопке */
+    }
+}
+
+/* Адаптация для экранов до 768px */
+@media (max-width: 768px) {
+    .appliance-repair__title {
+        font-size: 24px; /* Уменьшаем размер заголовка */
+    }
+
+    .appliance-repair__subtitle {
+        font-size: 18px; /* Уменьшаем размер подзаголовка */
+    }
+
+    .appliance-repair__cards {
+        gap: 8px; /* Уменьшаем отступы между карточками */
+        flex-direction: column; /* Переводим карточки в колонку */
+    }
+
+    .appliance-repair__card {
+        width: 100%; /* Делаем карточки на всю ширину */
+        max-width: 343px; /* Ограничиваем максимальную ширину */
+        margin-bottom: 16px; /* Добавляем отступы между карточками */
+    }
+
+    .appliance-repair__call-title {
+        font-size: 24px; /* Уменьшаем размер заголовка */
+    }
+
+    .appliance-repair__call-subtitle {
+        font-size: 18px; /* Уменьшаем размер подзаголовка */
+    }
+
+    .appliance-repair__button {
+        font-size: 16px; /* Уменьшаем размер шрифта на кнопке */
+    }
+}
+
+/* Адаптация для экранов до 480px */
+@media (max-width: 480px) {
+    .appliance-repair__title {
+        font-size: 20px; /* Уменьшаем размер заголовка */
+    }
+
+    .appliance-repair__subtitle {
+        font-size: 16px; /* Уменьшаем размер подзаголовка */
+    }
+
+    .appliance-repair__cards {
+        gap: 10px; /* Уменьшаем отступы между карточками */
+        flex-direction: column; /* Карточки будут в колонку */
+    }
+
+    .appliance-repair__card {
+        width: 100%; /* Карточки занимают всю ширину */
+        margin-bottom: 12px; /* Отступы между карточками */
+    }
+
+    .appliance-repair__call-title {
+        font-size: 20px; /* Уменьшаем размер заголовка */
+    }
+
+    .appliance-repair__call-subtitle {
+        font-size: 16px; /* Уменьшаем размер подзаголовка */
+    }
+
+    .appliance-repair__button {
+        font-size: 14px; /* Уменьшаем размер шрифта на кнопке */
+        padding: 10px 20px; /* Уменьшаем размеры кнопки */
+    }
 }
